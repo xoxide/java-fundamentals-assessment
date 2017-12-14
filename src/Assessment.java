@@ -23,8 +23,10 @@ public class Assessment {
 
     public static void main(String[] args) {
         int[] array = {1,2,3,4};
-
-
+        ArrayList<User> user = new ArrayList<>();
+        user.add(new User("cory","imel",true));
+        capitalizeRecords(user);
+        System.out.println(user.get(0).sayHello());
         System.out.println(square(5));
         System.out.println(sum(2,2));
         System.out.println(sum(2.3,2.2));
@@ -35,7 +37,7 @@ public class Assessment {
         public static ArrayList<User> capitalizeRecords(ArrayList<User> users){
                 for (User user : users){
                     user.setFirstName(user.getFirstName().substring(0, 1).toUpperCase() + user.getFirstName().substring(1));
-                    user.setFirstName(user.getLastName().substring(0, 1).toUpperCase() + user.getLastName().substring(1));
+                    user.setLastName(user.getLastName().substring(0, 1).toUpperCase() + user.getLastName().substring(1));
                 }
                 return users;
         }
