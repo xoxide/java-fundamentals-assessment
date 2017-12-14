@@ -25,6 +25,7 @@ public class Assessment {
         int[] array = {1,2,3,4};
         ArrayList<User> user = new ArrayList<>();
         user.add(new User("cory","imel",true));
+        System.out.println(user.get(0).sayHello());
         capitalizeRecords(user);
         System.out.println(user.get(0).sayHello());
         System.out.println(square(5));
