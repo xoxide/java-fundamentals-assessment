@@ -11,9 +11,20 @@ public class Assessment {
         return a + b;
     }
 
+    public static double average(int[] numbers){
+        int sum = 0;
+        for(int number : numbers){
+            sum += number;
+        }
+        return (double) sum / numbers.length;
+    }
+
     public static void main(String[] args) {
+        int[] array = {1,2,3,4};
+
         System.out.println(square(5));
         System.out.println(sum(2,2));
         System.out.println(sum(2.3,2.2));
+        System.out.println(average(array));
     }
 }
