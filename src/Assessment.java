@@ -28,6 +28,7 @@ public class Assessment {
         }
         return users;
     }
+
     public static void main(String[] args) {
         int[] array = {1,2,3,4};
         ArrayList<User> user = new ArrayList<>();
