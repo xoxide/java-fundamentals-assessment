@@ -21,6 +21,13 @@ public class Assessment {
         return (double) sum / numbers.length;
     }
 
+    public static ArrayList<User> capitalizeRecords(ArrayList<User> users){
+        for (User user : users){
+            user.setFirstName(user.getFirstName().substring(0, 1).toUpperCase() + user.getFirstName().substring(1));
+            user.setLastName(user.getLastName().substring(0, 1).toUpperCase() + user.getLastName().substring(1));
+        }
+        return users;
+    }
     public static void main(String[] args) {
         int[] array = {1,2,3,4};
         ArrayList<User> user = new ArrayList<>();
@@ -35,11 +42,5 @@ public class Assessment {
 
     }
 
-        public static ArrayList<User> capitalizeRecords(ArrayList<User> users){
-                for (User user : users){
-                    user.setFirstName(user.getFirstName().substring(0, 1).toUpperCase() + user.getFirstName().substring(1));
-                    user.setLastName(user.getLastName().substring(0, 1).toUpperCase() + user.getLastName().substring(1));
-                }
-                return users;
-        }
+
 }
