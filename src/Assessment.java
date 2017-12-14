@@ -30,6 +30,10 @@ public class Assessment {
     }
 
     public static void main(String[] args) {
+        int a = 2;
+        int b = 2;
+        double c = 2.3;
+        double d = 2.2;
         int[] array = {1,2,3,4};
         ArrayList<User> user = new ArrayList<>();
         user.add(new User("cory","imel",true));
@@ -37,8 +41,8 @@ public class Assessment {
         capitalizeRecords(user);
         System.out.println(user.get(0).sayHello());
         System.out.println(square(5));
-        System.out.println(sum(2,2));
-        System.out.println(sum(2.3,2.2));
+        System.out.println(sum(a,b));
+        System.out.println(sum(c,d));
         System.out.println(average(array));
 
     }
