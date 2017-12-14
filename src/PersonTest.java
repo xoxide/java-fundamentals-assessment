@@ -6,6 +6,7 @@ public class PersonTest {
         person.setFirstName("Cory");
         person.setLastName("Imel");
         System.out.printf("Hi %s %s%n",person.getFirstName(),person.getLastName());
-        Person person1 = new Person("Guy",null);
+        System.out.println(person.sayHello());
+//        Person person1 = new Person("Guy",null);
     }
 }
